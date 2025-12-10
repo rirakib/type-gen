@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prisma → TypeScript Generator</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body>
+    <!-- NAVIGATION -->
+    <nav>
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./logo.png" alt="TS TypeGen Logo" />
+        </a>
+      </div>
+
+      <button class="hamburger" id="hamburger">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="./index.html">Home</a></li>
+
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Tools ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="./migration.html">Migration → TS</a></li>
+            <li><a href="./postman.html">Postman → TS</a></li>
+            <li><a href="./json.html">JSON → TS</a></li>
+            <li><a href="./prisma.html">Prisma → TS</a></li>
+            <li><a href="./sql.html">SQL → TS</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <button id="themeToggle" class="theme-toggle">🌙</button>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="header small-header">
+      <h1>Prisma → TypeScript</h1>
+      <p>
+        Upload your Prisma schema (`schema.prisma`) to generate fully typed
+        TypeScript interfaces including enums and relations.
+      </p>
+    </header>
+
+    <!-- TOOL CONTAINER -->
+    <section class="tool-wrapper">
+      <div class="tool-card">
+        <h2>Upload Prisma Schema File</h2>
+        <div class="upload-box">
+          <input type="file" id="fileInput" accept=".prisma" />
+        </div>
+
+        <button id="generateBtn" class="generate-btn">
+          Generate TypeScript
+        </button>
+
+        <h3 class="output-title">Generated TypeScript:</h3>
+        <div class="output-container" id="tsOutputContainer">
+          <button class="copy-btn" id="copyBtn">Copy</button>
+          <pre id="tsOutput"></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how">
+      <h2>How It Works</h2>
+      <div class="steps">
+        <div class="step">
+          <h3>1. Upload Your Prisma Schema</h3>
+          <p>Drop your `schema.prisma` file directly into the upload box.</p>
+        </div>
+        <div class="step">
+          <h3>2. Generate TypeScript Interfaces</h3>
+          <p>
+            Click "Generate TypeScript" to produce interfaces with proper types,
+            optional fields, arrays, enums, and relations.
+          </p>
+        </div>
+        <div class="step">
+          <h3>3. Copy & Use</h3>
+          <p>Copy the generated TypeScript code for use in your project.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <p>© 2025 TS TypeGen — All Rights Reserved</p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="./js/main.js"></script>
+    <script src="./js/prisma.js"></script>
+  </body>
+</html>

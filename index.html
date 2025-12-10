@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TS TypeGen — TypeScript Type Generator</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body>
+    <!-- NAVIGATION -->
+    <nav>
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./logo.png" alt="TS TypeGen Logo" />
+        </a>
+      </div>
+
+      <button class="hamburger" id="hamburger">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="./index.html">Home</a></li>
+
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Tools ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="./migration.html">Migration → TS</a></li>
+            <li><a href="./postman.html">Postman → TS</a></li>
+            <li><a href="./json.html">JSON → TS</a></li>
+            <li><a href="./prisma.html">Prisma → TS</a></li>
+            <li><a href="./sql.html">SQL → TS</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <button id="themeToggle" class="theme-toggle">🌙</button>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="header">
+      <h1>Generate TypeScript Types Instantly</h1>
+      <p>
+        Convert JSON, API responses, Postman data, Laravel migrations, Prisma
+        schemas, or SQL tables into clean TypeScript types in seconds.
+      </p>
+      <a href="#tools"><button>Explore Tools</button></a>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section class="about">
+      <h2>What Is TS TypeGen?</h2>
+      <p>
+        TS TypeGen is a lightweight, developer-friendly tool built to speed up
+        TypeScript development. Instead of manually writing interfaces and type
+        definitions, just paste your data — and get ready-to-use TypeScript
+        instantly.
+      </p>
+      <p>
+        Whether you're working with APIs, SQL tables, Laravel migrations,
+        Postman collections, Prisma models, or raw JSON, TS TypeGen makes your
+        workflow fast, consistent, and modern.
+      </p>
+    </section>
+
+    <!-- TOOLS SECTION -->
+    <section class="tools" id="tools">
+      <h2>Available Tools</h2>
+      <div class="tool-list">
+        <a href="./json.html" class="tool">
+          <h3>JSON → TypeScript</h3>
+          <p>
+            Convert any JSON into beautifully structured TypeScript types and
+            interfaces.
+          </p>
+        </a>
+
+        <a href="./postman.html" class="tool">
+          <h3>Postman → TypeScript</h3>
+          <p>
+            Paste Postman form-data, x-www-form-urlencoded data, or raw JSON and
+            instantly generate TS types.
+          </p>
+        </a>
+
+        <a href="./migration.html" class="tool">
+          <h3>Laravel Migration → TypeScript</h3>
+          <p>
+            Upload Laravel migration files and convert database columns into
+            TypeScript interfaces.
+          </p>
+        </a>
+
+        <a href="./prisma.html" class="tool">
+          <h3>Prisma → TypeScript</h3>
+          <p>
+            Convert Prisma schema models into strongly typed TypeScript
+            interfaces, including enums and relations.
+          </p>
+        </a>
+
+        <a href="./sql.html" class="tool">
+          <h3>SQL → TypeScript</h3>
+          <p>
+            Generate TypeScript interfaces directly from SQL tables or CREATE
+            TABLE statements.
+          </p>
+        </a>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how">
+      <h2>How TS TypeGen Works</h2>
+      <div class="steps">
+        <div class="step">
+          <h3>1. Paste Your Data</h3>
+          <p>
+            Drop JSON, SQL schemas, Postman data, Prisma models, or Laravel
+            migrations.
+          </p>
+        </div>
+        <div class="step">
+          <h3>2. Choose Output Style</h3>
+          <p>
+            Select TypeScript interface, type alias, or array model — depending
+            on your preference.
+          </p>
+        </div>
+        <div class="step">
+          <h3>3. Generate Instantly</h3>
+          <p>Get clean, ready-to-use TypeScript types in milliseconds.</p>
+        </div>
+        <div class="step">
+          <h3>4. Copy & Use</h3>
+          <p>
+            Copy the generated types to your project or API client seamlessly.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMING SOON -->
+    <section class="coming-soon">
+      <h2>🚀 Coming Soon: Chrome Extension</h2>
+      <p>
+        Instantly generate TypeScript types from any API request or copied JSON
+        — directly in your browser.
+      </p>
+      <ul>
+        <li>🔹 Auto-detect JSON from DevTools Network Tab</li>
+        <li>🔹 1-click "Copy as TypeScript"</li>
+        <li>🔹 Works with API responses, forms, and raw bodies</li>
+      </ul>
+      <p>Launching soon on the Chrome Web Store.</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <p>© 2025 TS TypeGen — All Rights Reserved</p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
